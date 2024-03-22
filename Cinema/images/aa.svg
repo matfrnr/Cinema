@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Calque_1" data-name="Calque 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 428.91 258.06">
+  <defs>
+    <style>
+      .cls-1 {
+        letter-spacing: -.09em;
+      }
+
+      .cls-2 {
+        letter-spacing: -.02em;
+      }
+
+      .cls-3 {
+        letter-spacing: -.03em;
+      }
+
+      .cls-4 {
+        letter-spacing: 0em;
+      }
+
+      .cls-5 {
+        font-family: Lato-Regular, Lato;
+        font-size: 12px;
+      }
+
+      .cls-6 {
+        fill: #ebd85f;
+      }
+
+      .cls-6, .cls-7, .cls-8 {
+        stroke-width: .5px;
+      }
+
+      .cls-6, .cls-7, .cls-8, .cls-9 {
+        stroke: #000;
+        stroke-miterlimit: 10;
+      }
+
+      .cls-7 {
+        fill: #ffc800;
+      }
+
+      .cls-8 {
+        fill: #ab5200;
+      }
+
+      .cls-10 {
+        letter-spacing: 0em;
+      }
+
+      .cls-11 {
+        letter-spacing: 0em;
+      }
+
+      .cls-9 {
+        fill: none;
+      }
+
+      .cls-12 {
+        letter-spacing: -.01em;
+      }
+
+      .cls-13 {
+        letter-spacing: -.01em;
+      }
+
+      .cls-14 {
+        letter-spacing: -.03em;
+      }
+    </style>
+  </defs>
+  <g>
+    <line class="cls-9" x1="25.19" y1="228.3" x2="300.79" y2="228.3"/>
+    <g>
+      <line class="cls-9" x1="71.12" y1="228.3" x2="71.12" y2="5.45"/>
+      <line class="cls-9" x1="162.99" y1="228.3" x2="162.99" y2="5.45"/>
+      <line class="cls-9" x1="254.86" y1="228.3" x2="254.86" y2="5.45"/>
+    </g>
+  </g>
+  <g>
+    <g>
+      <text class="cls-5" transform="translate(13.92 233.15)"><tspan x="0" y="0">0</tspan></text>
+      <text class="cls-5" transform="translate(6.96 188.58)"><tspan x="0" y="0">20</tspan></text>
+      <text class="cls-5" transform="translate(6.96 144.01)"><tspan x="0" y="0">40</tspan></text>
+      <text class="cls-5" transform="translate(6.96 99.44)"><tspan x="0" y="0">60</tspan></text>
+      <text class="cls-5" transform="translate(6.96 54.87)"><tspan x="0" y="0">80</tspan></text>
+      <text class="cls-5" transform="translate(0 10.3)"><tspan x="0" y="0">100</tspan></text>
+    </g>
+    <line class="cls-9" x1="25.19" y1="228.3" x2="25.19" y2="5.45"/>
+    <g>
+      <line class="cls-9" x1="25.19" y1="228.3" x2="32.08" y2="228.3"/>
+      <line class="cls-9" x1="25.19" y1="183.73" x2="32.08" y2="183.73"/>
+      <line class="cls-9" x1="25.19" y1="139.16" x2="32.08" y2="139.16"/>
+      <line class="cls-9" x1="25.19" y1="94.59" x2="32.08" y2="94.59"/>
+      <line class="cls-9" x1="25.19" y1="50.02" x2="32.08" y2="50.02"/>
+      <line class="cls-9" x1="25.19" y1="5.45" x2="32.08" y2="5.45"/>
+    </g>
+  </g>
+  <g>
+    <g>
+      <rect class="cls-7" x="320.42" y="5.45" width="34.45" height="22.28"/>
+      <g>
+        <rect class="cls-7" x="38.05" y="5.68" width="66.15" height="72.2"/>
+        <rect class="cls-7" x="129.92" y="5.45" width="66.15" height="83.57"/>
+        <rect class="cls-7" x="221.78" y="5.45" width="66.15" height="94.49"/>
+      </g>
+    </g>
+    <g>
+      <rect class="cls-8" x="320.42" y="38.88" width="34.45" height="22.28"/>
+      <g>
+        <rect class="cls-8" x="38.05" y="77.88" width="66.15" height="99.17"/>
+        <rect class="cls-8" x="129.92" y="89.02" width="66.15" height="100.5"/>
+        <rect class="cls-8" x="221.78" y="99.94" width="66.15" height="96.49"/>
+      </g>
+    </g>
+    <g>
+      <rect class="cls-6" x="320.42" y="72.31" width="34.45" height="22.28"/>
+      <g>
+        <rect class="cls-6" x="38.05" y="177.05" width="66.15" height="51.26"/>
+        <rect class="cls-6" x="129.92" y="189.53" width="66.15" height="38.78"/>
+        <rect class="cls-6" x="221.78" y="196.43" width="66.15" height="31.87"/>
+      </g>
+    </g>
+  </g>
+  <g>
+    <text class="cls-5" transform="translate(359.18 21.44)"><tspan x="0" y="0">Occasionnels</tspan></text>
+    <text class="cls-5" transform="translate(359.18 54.87)"><tspan x="0" y="0">Réguliers</tspan></text>
+    <text class="cls-5" transform="translate(359.18 88.3)"><tspan x="0" y="0">Assidus</tspan></text>
+  </g>
+  <g>
+    <text class="cls-5" transform="translate(210.24 241.47)"><tspan x="0" y="0">Au</tspan><tspan class="cls-13" x="14.83" y="0">v</tspan><tspan class="cls-10" x="20.82" y="0">ergne-Rhône</tspan><tspan x="29.94" y="14.4">Alpes</tspan></text>
+    <text class="cls-5" transform="translate(121.62 241.47)"><tspan x="0" y="0">Pr</tspan><tspan class="cls-12" x="12.17" y="0">ov</tspan><tspan class="cls-11" x="24.67" y="0">ence</tspan><tspan class="cls-14" x="49.52" y="0">-</tspan><tspan class="cls-11" x="53.38" y="0">Alpes</tspan><tspan x="10.69" y="14.4">Côte d</tspan><tspan class="cls-1" x="45.37" y="14.4">’</tspan><tspan class="cls-4" x="46.82" y="14.4">Azur</tspan></text>
+    <text class="cls-5" transform="translate(36.09 241.47)"><tspan x="0" y="0">Île-de-</tspan><tspan class="cls-3" x="34.37" y="0">F</tspan><tspan class="cls-2" x="40.8" y="0">r</tspan><tspan class="cls-11" x="45.41" y="0">ance</tspan></text>
+  </g>
+</svg>

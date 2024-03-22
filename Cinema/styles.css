@@ -1,0 +1,813 @@
+/*Style par défaut*/
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    height: 100%;
+    font-family: Poppins, sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul, ol {
+    list-style: none;
+}
+
+.graph {
+    padding: 40px;
+    text-align: justify;
+}
+
+.graph h2 {
+    margin-bottom: 60px;
+    padding: 0 40px;
+}
+
+/*--------------Menu--------------------*/
+nav {
+    display: flex;
+    justify-content: space-around;
+    padding: 25px 0;
+    align-items: center;
+}
+
+/*logo*/
+.mascotteLogo {
+    width: 80px;
+}
+
+/*barre de navigation*/
+nav ul {
+    display: flex;
+}
+
+/*sous-menu*/
+nav li {
+    margin: 0 20px;
+    position: relative;
+    font-weight: 500;
+    color: black;
+}
+
+/*trait*/
+nav li:after {
+    content: "";
+    height: 5px;
+    position: absolute;
+    background: #945B2A;
+    width: 85%;
+    display: flex;
+    border-radius: 30px;
+    transition: 0.5s;
+}
+
+nav li:nth-child(2n):after {
+    background: #FAC939;
+}
+
+nav li:hover:after {
+    width: 100%;
+    transition: 0.5s;
+}
+
+nav a {
+    font-weight: 500;
+    color: black;
+}
+
+/*Moins d'espace sur les cotés*/
+@media screen and (max-width: 1000px) {
+    nav {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin: 0 40px;
+    }
+}
+
+/*texte plus petit*/
+@media screen and (max-width: 880px) {
+    nav li {
+        font-size: 12px;
+        margin: 0 15px;
+    }
+
+    h1 {
+        font-size: 26px;
+    }
+}
+
+/*menu mobile*/
+@media screen and (max-width: 640px) {
+    .mascotteLogo {
+        display: none;
+    }
+
+    nav ul {
+        display: flex;
+        right: 10px;
+        top: 90px;
+    }
+
+    nav {
+        justify-content: center;
+    }
+
+    nav li {
+        margin: 10px;
+    }
+
+    h1 {
+        font-size: 24px;
+        width: 90%;
+        margin: 0 auto;
+    }
+
+}
+
+@media screen and (min-width: 500px) and (max-width: 620px) {
+    nav {
+        margin: 0 60px;
+    }
+}
+
+/*--------------Titre--------------------*/
+
+.title {
+    text-align: center;
+    margin: 150px 0;
+    position: relative;
+}
+
+.title img {
+    max-width: 250px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: -60px;
+    z-index: -3;
+}
+
+@media screen and (max-width: 640px) {
+    .title {
+        margin: 120px 0;
+    }
+
+}
+
+@media screen and (max-width: 503px) {
+    .title {
+        margin-bottom: 80px;
+    }
+
+}
+
+/*--------------Animation mascotte--------------------*/
+
+.animation {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 150px 30px 20px;
+}
+
+.animation p {
+    width: 50%;
+    line-height: 2;
+    text-align: justify;
+}
+
+.trait {
+    border: 3px solid #945B2A;
+    width: 60%;
+    display: flex;
+    margin: 0 auto;
+    border-radius: 30px;
+
+}
+
+@media screen and (max-width: 930px) {
+    .animation p {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .animation p {
+        font-size: 13px;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .animation {
+        display: flex;
+        flex-direction: column-reverse;
+        margin-bottom: 0;
+    }
+
+    .animation p {
+        width: 90%;
+        margin-top: 30px;
+    }
+}
+
+@media screen and (max-width: 503px) {
+    .animation {
+        margin: 0 30px 0;
+    }
+}
+
+/*--------------Inegalité--------------------*/
+
+/*GRAPHIQUE 1*/
+
+#inegalites p {
+    line-height: 2;
+}
+
+.carteFrance {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+}
+
+.carteFrance h3 {
+    position: relative;
+    display: inline-block;
+    top: -60px;
+}
+
+.carteFrance p {
+    text-align: justify;
+}
+
+.carteFrance img {
+    width: 100%;
+    padding: 0 50px;
+    margin-left: 30px;
+}
+
+@media screen and (max-width: 1100px) {
+    .carteFrance p {
+        font-size: 14px;
+    }
+
+    #chiffres p {
+        font-size: 14px;
+    }
+
+    .carteFrance h3 {
+        top: -30px;
+    }
+}
+
+
+/*GRAPHIQUE 2*/
+
+.siege {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    text-align: center;
+    gap: 25px;
+}
+
+.siege h3 {
+    position: relative;
+    display: inline-block;
+    top: -60px;
+}
+
+#inegalites h3:after, #profil h3:after, #chiffres h3:after {
+    content: "";
+    height: 5px;
+    width: 85%;
+    background: #945B2A;
+    position: absolute;
+    display: flex;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 30px;
+}
+
+.siege p {
+    text-align: justify;
+    width: 95%;
+    margin-left: 10px;
+}
+
+@media screen and (max-width: 1200px) {
+    .siege {
+        margin-top: 50px;
+    }
+
+}
+
+@media screen and (max-width: 1100px) {
+    .siege p {
+        font-size: 14px;
+    }
+}
+
+/*GRAPHIQUE 3*/
+
+.regions {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+    margin-top: 15px;
+}
+
+.regions p {
+    text-align: justify;
+    width: 95%;
+    position: relative;
+    top: 40px;
+}
+
+.regions img {
+    width: 80%;
+    margin-top: 50px;
+    position: relative;
+    left: -30px;
+}
+
+.regions h3 {
+    text-align: center;
+    position: relative;
+    display: inline-block;
+}
+
+.trait2 {
+    border: 3px solid #FAC939;
+    width: 60%;
+    display: flex;
+    margin: 40px auto 0;
+    border-radius: 30px;
+}
+
+@media screen and (max-width: 1100px) {
+    .regions p {
+        font-size: 14px;
+    }
+}
+
+
+/*--------------Profil--------------------*/
+#profil {
+    text-align: center;
+}
+
+#profil h2 {
+    padding: 40px;
+    text-align: left;
+}
+
+#profil h3 {
+    text-align: center;
+    position: relative;
+    display: inline-block;
+    top: -50px;
+}
+
+.graph1 img {
+    width: 80%;
+    margin: 25px auto;
+    display: block;
+}
+
+.graphCombine {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    margin-top: 120px;
+}
+
+
+#profil .trait {
+    position: relative;
+    top: -50px;
+}
+
+.test {
+    position: relative;
+}
+
+#inegalites .bulle {
+    width: 50%;
+    position: absolute;
+    left: 50%;
+    top: -300px;
+    transform: translateX(-50%);
+}
+
+.graph2 canvas {
+    margin-top: 25px;
+}
+
+.graph3 img {
+    width: 90%;
+    position: relative;
+    right: -80px;
+    top: -30px;
+}
+
+@media screen and (max-width: 950px) {
+    .carteFrance {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+
+    #inegalites p {
+        font-size: 16px;
+    }
+
+    .carteFrance img {
+        width: 90%;
+        margin-bottom: 70px;
+        padding: 0 30px;
+    }
+
+    .carteFrance p {
+        margin: 0 auto 20px;
+        padding: 0 15px;
+    }
+
+    .siege {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .siege img {
+        width: 100%;
+    }
+
+    .regions {
+        display: flex;
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .regions h3 {
+        margin-top: 35px;
+        margin-bottom: 30px;
+    }
+
+    .regions p {
+        margin-bottom: 30px;
+    }
+
+    .regions img {
+        width: 100%;
+        left: 0;
+        padding: 0 15px;
+    }
+
+    #inegalites h2 {
+        padding: 0 15px;
+    }
+}
+
+@media screen and (max-width: 780px) {
+    .graph {
+        padding: 10px;
+    }
+
+    #inegalites h2 {
+        font-size: 20px;
+        padding: 25px 25px 0;
+    }
+
+    #inegalites p {
+        font-size: 15px;
+        padding: 0 25px;
+    }
+
+    .siege p {
+        width: 100%;
+    }
+
+
+}
+
+@media screen and (max-width: 600px) {
+    .carteFrance img {
+        width: 100%;
+        padding: 0 15px;
+    }
+
+    #inegalites p {
+        font-size: 14px;
+        padding: 5px;
+    }
+
+    #inegalites h2 {
+        padding: 5px;
+    }
+
+    #inegalites h3 {
+        font-size: 16px;
+    }
+
+    .regions img {
+        padding: 0;
+    }
+}
+
+@media screen and (max-width: 1070px) {
+    .graphCombine {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .graph2 canvas {
+        margin-top: 0;
+        margin-bottom: 60px;
+    }
+
+    #profil .graph2 h3 {
+        top: -25px;
+    }
+
+    .graph3 img {
+        width: 100%;
+    }
+
+    .chart {
+        min-width: 500px;
+    }
+
+    .graph2 {
+        position: relative;
+        top: -40px;
+    }
+
+    .graph3 {
+        position: relative;
+        top: -30px;
+    }
+
+    .graph1 img {
+        width: 95%;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .chart {
+        min-width: 400px;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .chart {
+        min-width: 350px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    #profil h2 {
+        padding: 40px 5px;
+    }
+
+    #profil h3 {
+        font-size: 16px;
+    }
+
+    .chart {
+        position: relative;
+        left: -10px;
+    }
+
+    .graph3 img {
+        right: -50px;
+    }
+
+}
+
+.chiffres {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    text-align: center;
+    align-items: center;
+}
+
+.chiffres img {
+    width: 95%;
+    margin-left: 10px;
+}
+
+.chiffres p {
+    text-align: justify;
+    line-height: 2;
+    width: 95%;
+}
+
+#chiffres h3 {
+    margin-bottom: 40px;
+}
+
+
+.chiffres div {
+    position: relative;
+}
+
+.chiffres div img {
+    width: 30%;
+    position: relative;
+    top: 60px;
+}
+
+.chiffresSec {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    text-align: center;
+    margin-top: 50px;
+
+}
+
+.chiffresSec .anim img {
+    width: 60%;
+    min-width: 400px;
+}
+
+@media screen and (max-width: 950px) {
+    .chiffres {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+
+@media screen and (max-width: 780px) {
+    .chiffres p {
+        padding: 0 25px;
+    }
+
+}
+
+@media screen and (max-width: 600px) {
+    #chiffres h2 {
+        padding: 0 5px;
+    }
+
+    #chiffres h3 {
+        font-size: 16px;
+    }
+
+    .chiffres p {
+        padding: 0 5px;
+    }
+}
+
+.cc {
+    width: 100%;
+}
+
+@media screen and (max-width: 1200px) {
+    .cc {
+        width: 560px;
+    }
+}
+
+
+@media screen and (max-width: 1070px) {
+    .chiffresSec {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .cc {
+        width: 100%;
+        margin-top: 40px;
+    }
+
+    .chiffresSec .anim img {
+        width: 100%;
+    }
+
+    .anim {
+        margin-top: 40px;
+        position: relative;
+        right: 0;
+
+    }
+}
+
+
+@media screen and (min-width: 1800px) {
+    .graph2 {
+        position: relative;
+        right: -80px;
+    }
+
+    .graph3 {
+        position: relative;
+        right: -90px;
+    }
+
+}
+
+@media screen and (max-width: 500px) {
+    nav li {
+        font-size: 10px;
+    }
+}
+
+#chiffres .t {
+    display: inline-block;
+    position: relative;
+
+}
+
+.anim {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+@media screen and (max-width: 1150px) {
+    .anim {
+        position: relative;
+        right: -50px;
+    }
+}
+
+@media screen and (max-width: 600px){
+    .anim{
+        right: 0;
+    }
+}
+
+#habitudes{
+    margin-top: 30px;
+}
+.b{
+   display: grid;
+    grid-template-columns: 50% 50%;
+    gap: 20px;
+    align-items: center;
+}
+
+.b p{
+    text-align: justify;
+}
+
+.bc{
+    display: flex;
+    flex-direction: column;
+}
+
+.b h3{
+    text-align: center;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+
+#habitudes p{
+    padding: 0 25px;
+}
+@media screen and (max-width: 950px){
+    .b{
+        display: flex;
+        flex-direction: column;
+    }
+    .
+}
+
+@media screen and (max-width: 600px){
+    #habitudes h3{
+        font-size: 16px;
+    }
+    #habitudes h2{
+        padding: 0 5px;
+        text-align: left;
+    }
+    #habitudes p{
+        padding: 0 5px;
+    }
+}

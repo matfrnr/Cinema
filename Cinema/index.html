@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <!--Paramètre de la page-->
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Le cinéma</title>
+    <meta name="description" content="Le cinéma par région et ses chiffres clés - SAE 303">
+    <!--Lien fichier-->
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/png" href="./images/mascotteWeb.svg">
+    <!--Bibliothèque Chart.JS-->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <!--Police Lato-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+<header>
+    <!--Barre de navigation-->
+    <nav>
+        <!--Logo-->
+        <div>
+            <img src="./images/mascotteTop.svg" alt="mascotte" class="mascotteLogo">
+        </div>
+        <!--Menu-->
+        <div>
+            <ul>
+                <li><a href="#inegalites">Les inégalités</a></li>
+                <li><a href="#profil">Le profil</a></li>
+                <li><a href="#chiffres">Les chiffres</a></li>
+                <li><a href="#habitudes">Les habitudes</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!--En tête du site-->
+    <div class="title">
+        <h1>Le top 3 du cinéma selon les régions</h1>
+        <img src="images/carteTitre.svg">
+    </div>
+
+    <div class="animation">
+        <img src="./animation/animMascotte_1.gif">
+        <p>Le cinéma est un lieu convivial, on peut y aller en famille, entre amis ou bien seul.
+            Mais savez-vous qu’il existe des différences notables entre les différentes régions ?
+            C’est ce que nous allons voir aujourd’hui à travers Auguste, notre mascotte.
+            Le but est de faire le top 3 des régions dans plusieurs domaines !
+        </p>
+    </div>
+
+    <span class="trait"></span>
+</header>
+
+<main class="graph">
+    <section id="inegalites">
+        <h2>Des inégalités d'accès selon le lieu de résidence</h2>
+        <div class="carteFrance">
+            <img src="./images/carte1.svg">
+            <div class="test">
+                <!--<img src="./images/mascotteTexte1.svg" class="bulle">-->
+                <h3>Nombre d'établissements de cinéma</h3>
+                <p>Le nombre d’établissement varie selon les régions, l’écart peut aller jusqu’a 300%
+                    dans certains territoires. On observe parmi les régions elles-mêmes des différences
+                    importantes entre les espaces ruraux et les espaces urbains. Ainsi, dans certains endroits,
+                    on doit faire plusieurs dizaines de kilomètres pour accèder à un cinéma. </p>
+            </div>
+        </div>
+        <div class="siege">
+            <p>La Corse malgrè sont très faible nombre de cinéma possède
+                le meilleur ratio nombre de siège par habitant. Cela s’explique
+                par sa faible population. Au contraire, de l’Île-de-France qui est
+                le territoire le plus peuplé et pourtant dans les moins bons.
+            </p>
+            <div>
+                <h3>Nombre de siège par nombre d’habitants</h3>
+                <img src="./images/siege.svg">
+            </div>
+        </div>
+        <div class="regions">
+            <div class="regionsCarte">
+                <h3>Le tarif des billets les plus chères</h3>
+                <img src="images/region.svg">
+            </div>
+            <p>Le tarif des billets est plus chère dans les zones urbaines, on observe des écarts
+                jusqu’a 25% entre des régions. Cette différence de prix constitue une inégalité
+                pour les plus précaires qui doivent faire des concessions.</p>
+        </div>
+        <span class="trait2"></span>
+
+    </section>
+
+    <section id="profil">
+        <h2>Le profil types des spectateurs</h2>
+        <div class="graph1">
+            <h3>Le plus d’hommes consommateur</h3>
+            <img src="./images/graphHomme.svg">
+        </div>
+        <div class="graphCombine">
+            <div class="graph2">
+                <h3>Le plus de spectateurs entre 3 et 14 ans </h3>
+                <div class="chart">
+                    <canvas id="myChart"></canvas>
+                </div>
+            </div>
+            <div class="graph3">
+                <h3>La classe sociale des consommateurs</h3>
+                <img src="./animation/animGraphique1.gif">
+            </div>
+        </div>
+        <span class="trait"></span>
+
+    </section>
+
+    <section id="chiffres">
+        <h2>Les chiffres du cinéma par région</h2>
+        <div class="chiffres">
+            <img src="./images/entres.svg">
+            <div>
+                <h3 class="t">Le nombre d'entrées par an au cinéma</h3>
+                <p>On remarque que les 3 régions possédant le plus d’établissements
+                    de cinéma sont logiquement celles qui font le plus d’entrées.
+                    On peut aussi noter que les régions du sud sont plus attractives
+                    que celles du nord.</p>
+                <img src="./images/podium.svg">
+            </div>
+        </div>
+        <div class="chiffresSec">
+            <div class="cc">
+                <h3 class="t">Recettes en fonction des entrées</h3>
+                <canvas id="myChart2"></canvas>
+            </div>
+            <div class="anim">
+                <h3 class="aa t">Les régions avec le plus d'écrans</h3>
+                <img src="./animation/animGraphique2.gif">
+            </div>
+        </div>
+        <span class="trait2"></span>
+
+    </section>
+
+    <section id="habitudes">
+        <h2>Les habitudes de consommation</h2>
+        <div class="b">
+            <img src="./images/aa.svg">
+            <div class="bc">
+                <h3>Les régions avec le plus de spectateurs assidus </h3>
+                <p>Il y a trois types de spectateurs : les assidus qui viennent
+                    toutes les semaines, les réguliers qui viennent tous les mois
+                    et les occasionnels qui y vont quelques fois par <an class=""></an></p>
+            </div>
+        </div>
+    </section>
+</main>
+
+
+<!--Fichier JS pour graphique avec bibliothèque Chart.JS-->
+<script src="script.js"></script>
+
+</body>
+
+</html>
